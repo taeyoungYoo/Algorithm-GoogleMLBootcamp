@@ -1,2 +1,10 @@
 # Algorithm-GoogleMLBootcamp
-Algorithm study in GoogleMLBootcamp
+Google ML Bootcamp 모임에서 진행하는 코딩스터디
+
+## Contributors
+
+## 진행 플랫폼
+- LeetCode [https://leetcode.com/]
+- Baekjoon Online Judge
+- Programmers
+- CodeForce
