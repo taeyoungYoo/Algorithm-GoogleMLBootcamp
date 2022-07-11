@@ -1,5 +1,5 @@
 # Algorithm-GoogleMLBootcamp
-Google ML Bootcamp 모임에서 진행하는 코딩스터디
+Google ML Bootcamp 모임에서 진행하는 알고리즘 스터디 레포지토리입니다.
 
 ## Contributors
 
