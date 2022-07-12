@@ -20,10 +20,11 @@ class Solution:
         
         # 팰린드럼 판별
         # if new_s == ''.join(reversed(new_s)): # 55~102ms
-        if new_s == new_s[::-1]: # 60ms
-            return 1
-        else:
-            return 0
+        # if new_s == new_s[::-1]: # 51~60ms
+        #     return 1
+        # else:
+        #     return 0
+        return new_s == new_s[::-1]
         
             
         
