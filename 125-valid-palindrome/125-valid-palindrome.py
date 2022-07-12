@@ -19,7 +19,8 @@ class Solution:
                 new_s += c.lower()
         
         # 팰린드럼 판별
-        if new_s == ''.join(reversed(new_s)):
+        # if new_s == ''.join(reversed(new_s)): # 55~102ms
+        if new_s == new_s[::-1]:
             return 1
         else:
             return 0
