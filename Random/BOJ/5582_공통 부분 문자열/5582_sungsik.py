@@ -23,3 +23,4 @@ while p2 < len(short):      # short의 문자열 끝까지 탐색
         p1 += 1                             # 부분 문자열이 없으면 포인터1 오른쪽으로 한칸 이동
 
 print(answer)
+# 메모리 : 30840 kb,  시간: 2828 ms
