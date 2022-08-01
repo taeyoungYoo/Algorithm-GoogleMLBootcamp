@@ -1,16 +1,14 @@
 class Solution:
-    def combine(self, n: int, k: int) -> List[List[int]]:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates.sort()
         ret = []
-        def combination(elements: list, start: int, cnt: int):
-            if cnt == k:
-                ret.append(elements[:])
+        def dfs(csum, index, path):
+            if csum < 0:
                 return
-
-            for i in range(start, n + 1):
-                elements.append(i)
-                combination(elements, i + 1, cnt + 1)
-                elements.pop()
-
-
-        combination([], 1, 0)
+            if csum == 0:
+                ret.append(path)
+                return
+            for i in range(index, len(candidates)):
+                dfs(csum - candidates[i], i, path + [candidates[i]])
+        dfs(target, 0, [])
         return ret
