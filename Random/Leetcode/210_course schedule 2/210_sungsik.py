@@ -25,7 +25,7 @@ class Solution:
         if in_degree[node[0]] == 0:                           # 추가로 필요한 선수 과목이 없으면 큐에 추가
           que.append(node[0])
 
-    if len(answer) != numCourses:     # 예외 처리: 순환이 있는 경우. -> 빈 리스트 반환환
+    if len(answer) != numCourses:     # 예외 처리: 순환이 있는 경우. -> 빈 리스트 반환
       return []
 
     return answer
