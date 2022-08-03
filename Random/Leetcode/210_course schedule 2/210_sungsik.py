@@ -1,8 +1,9 @@
+# runtime 441 ms (5.01 %), memory 15.4 mb (88.87 %)
 class Solution:
   def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
 
-    if len(prerequisites) == 0:       # 예외 처리: 선수 과목이 없는 경우 -> 과목 순서 그대로 반환
-      return [i for i in range(numCourses)]
+    # if len(prerequisites) == 0:       # 예외 처리: 선수 과목이 없는 경우 -> 과목 순서 그대로 반환
+    #   return [i for i in range(numCourses)]
 
     in_degree = [0] * numCourses
     for node in prerequisites:        # 선수 과목이 필요한 경우 진입 차수 +1. O(n)
