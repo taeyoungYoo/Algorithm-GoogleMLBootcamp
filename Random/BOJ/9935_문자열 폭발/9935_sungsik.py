@@ -4,9 +4,11 @@ explode = 'C4'
 # 풀이 3. stack + del : 메모리 42020 kb, 시간 508 ms
 stack = []
 for i in s:
-    stack.append(i)
-    if stack[-1] == explode[-1] and ''.join(stack[-len(explode):]) == explode:
+    stack.append(i)     # 문자열 끝까지 돌면서 한글자씩 스택에 넣음
+
+    if stack[-1] == explode[-1] and ''.join(stack[-len(explode):]) == explode:  # 만약 스택의 맨 끝이 explode 맨 끝과 같고 폭발문자열이 있으면 스택에서 삭제
         del stack[-len(explode):]
+
 print('FRULA' if ''.join(stack) == '' else ''.join(stack))
 
 
