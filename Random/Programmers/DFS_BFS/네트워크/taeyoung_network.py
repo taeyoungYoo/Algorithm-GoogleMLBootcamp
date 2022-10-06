@@ -1,9 +1,10 @@
 '''
     프로그래머스 네트워크
-    - 사이클의 개수를 세는 문제
-    - 1 사이클이 곧 1 네트워크
+    - 덩어리의 개수를 세는 문제
+    - 1 덩어리가 곧 1 네트워크
     - DFS 사용
 '''
+
 
 visited = []
 def dfs(node, graph):
@@ -12,6 +13,7 @@ def dfs(node, graph):
     for next in graph[node]:
         if visited[next] == 0:
             dfs(next, graph)
+
 
 def solution(n, computers):
     global visited
